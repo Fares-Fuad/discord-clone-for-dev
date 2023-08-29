@@ -74,6 +74,7 @@ model Channel {
   serverId  String
   type      ChannelType @default(TEXT)
   updatedAt DateTime    @updatedAt
+  name      String
 
   @@index([profileId])
   @@index([serverId])
